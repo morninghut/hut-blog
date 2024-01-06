@@ -1,6 +1,6 @@
 /*keep the change things*/
 :root {
-  --c-divider: #65b486;
+  --c-divider: #4F5E80;
 
   --c-brand: #333;
   /*  don't forget change the --tag-bg for tags */
@@ -11,7 +11,7 @@
   /* pure theme color */
   --li-dot-color: #737373;
   --title-color: var(--vp-c-brand);
-  --date-color: #65b486;
+  --date-color: #4F5E80;
   --date-font-family: Georgia, sans-serif;
 
   /* tag color */

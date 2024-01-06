@@ -10,8 +10,8 @@ export default async () => {
   await generateWeeklyArchivePage()
 
   return defineConfigWithTheme<LoiaThemeConfig>({
-    title: "Lost Pieces - Locietta's Blog",
-    description: 'Life Record & Tech Share',
+    title: "Hut's Blog",
+    description: 'Record & Think',
     markdown: {
       theme: { light: 'light-plus', dark: 'dark-plus' },
       config: (md) => {
@@ -42,11 +42,11 @@ export default async () => {
     themeConfig: {
       posts: await getPosts(),
       pageSize: pageSize,
-      website: 'https://github.com/Locietta/blog-lost-pieces',
+      website: 'https://github.com/morninghut/hut-blog',
       logo: '/favicon.ico',
       comment: true,
-      giscusConfig: {
-        repo: 'Locietta/blog-lost-pieces',
+      giscusConfig: { // repoid need to be modified later
+        repo: 'morninghut/hut-blog',
         repoId: 'R_kgDOH-URKw',
         category: 'Announcements',
         categoryId: 'DIC_kwDOH-URK84CTZKy'
@@ -60,13 +60,14 @@ export default async () => {
         {
           text: 'External',
           items: [
-            { text: 'Github', link: 'https://github.com/Locietta' },
-            { text: 'Zhihu', link: 'https://www.zhihu.com/people/wang-ling-xin-94' }
+            { text: 'Github', link: 'https://github.com/morninghut' },
+            { text: 'Telegram', link: 'https://t.me/morning_hut'}
+            // { text: 'Zhihu', link: 'https://www.zhihu.com/people/wang-ling-xin-94' }
           ]
         }
       ],
 
-      socialLinks: [{ icon: 'github', link: 'https://github.com/Locietta/blog-lost-pieces' }]
+      socialLinks: [{ icon: 'github', link: 'https://github.com/morninghut/hut-blog' }]
     },
     srcExclude: ['README.md'],
     vue: {
